@@ -95,3 +95,14 @@ h1 {
 #soluciones .card p {
     color: #cbd5f5;
 }
+
+#apps {
+    padding: 80px 20px;
+    background-color: #f8fafc;
+    text-align: center;
+}
+
+#apps .subtext {
+    margin-bottom: 40px;
+    color: #475569;
+}
