@@ -3,9 +3,20 @@ function copiarEmail() {
 
     navigator.clipboard.writeText(email)
         .then(() => {
-            alert("Correo copiado");
+            mostrarToast("Correo copiado");
         })
         .catch(() => {
-            alert("No se pudo copiar");
+            mostrarToast("No se pudo copiar");
         });
+}
+
+function mostrarToast(mensaje) {
+    const toast = document.getElementById("toast");
+    toast.innerText = mensaje;
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 2000);
 }
