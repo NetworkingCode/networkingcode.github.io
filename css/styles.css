@@ -106,3 +106,19 @@ h1 {
     margin-bottom: 40px;
     color: #475569;
 }
+
+#contacto {
+    padding: 80px 20px;
+    background-color: #020617;
+    color: white;
+    text-align: center;
+}
+
+#contacto .subtext {
+    margin-bottom: 30px;
+    color: #cbd5f5;
+}
+
+.contact-actions {
+    margin-top: 20px;
+}
