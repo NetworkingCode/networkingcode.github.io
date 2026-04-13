@@ -74,3 +74,24 @@ h1 {
 .card h3 {
     margin-top: 0;
 }
+
+#soluciones {
+    padding: 80px 20px;
+    background-color: #020617;
+    color: white;
+    text-align: center;
+}
+
+#soluciones h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+#soluciones .card {
+    background: #0f172a;
+    color: white;
+}
+
+#soluciones .card p {
+    color: #cbd5f5;
+}
