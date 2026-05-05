@@ -184,7 +184,7 @@ h3 {
 #problemas {
     padding: 80px 20px;
     background-color: #f8fafc;
-    background: #fafafa;
+    /* background: #fafafa; */
     text-align: center;
 }
 
@@ -199,7 +199,7 @@ h3 {
     background-color: #020617;
     color: white;
     text-align: center;
-    background: #fff;
+    /* background: #fff; */
 }
 
 
