@@ -186,7 +186,7 @@ h3 {
 
 #problemas {
     padding: 80px 20px;
-    background-color: #f8fafc;
+    background-color: #F7F7F7;
     /* background: #fafafa; */
     text-align: center;
 }
@@ -199,7 +199,7 @@ h3 {
 
 #soluciones {
     padding: 80px 20px;
-    background-color: #020617;
+    background-color: #FFFF;
     color: white;
     text-align: center;
     /* background: #fff; */
@@ -207,6 +207,7 @@ h3 {
 
 #cierre {
 
+    background-color: #F7F7F7;
     text-align: center;
     padding: 80px 20px;
 }
@@ -227,7 +228,7 @@ h3 {
 }
 
 #proceso {
-    background: #fafafa;
+    background-color: #FFFF;
 }
 
 #apps {
