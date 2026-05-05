@@ -118,7 +118,7 @@ h3 {
 
 .btn {
     display: inline-block;
-    background: #000;
+    background: #0A66C2;
     color: #fff;
     padding: 14px 28px;
     border-radius: 8px;
@@ -128,7 +128,7 @@ h3 {
 }
 
 .btn:hover {
-    background: #222;
+    background: #084C99;
     transform: translateY(-2px);
 }
 
