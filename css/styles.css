@@ -58,7 +58,10 @@ header h1 {
 }
 
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     margin: 0;
 }
 
@@ -200,6 +203,12 @@ h3 {
     color: white;
     text-align: center;
     /* background: #fff; */
+}
+
+#cierre {
+
+    text-align: center;
+    padding: 80px 20px;
 }
 
 
