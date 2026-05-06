@@ -25,10 +25,10 @@ function mostrarToast(mensaje) {
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-if (menuToggle) {
+if (menuToggle && navLinks) {
     menuToggle.addEventListener('click', () => {
         // Esto activa el menú
-        // navLinks.classList.toggle('active');
+        navLinks.classList.toggle('active');
         // Esto sirve por si quieres animar las rayitas del botón
         menuToggle.classList.toggle('active');
     });
