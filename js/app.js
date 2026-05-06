@@ -33,3 +33,8 @@ document.querySelectorAll('#navLinks a').forEach(link => {
         navLinks.classList.remove('active');
     });
 });
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+});
