@@ -59,6 +59,13 @@ header h1 {
     cursor: pointer;
 }
 
+/* Animación de las rayitas del botón */
+.menu-toggle.active {
+    transform: rotate(90deg); /* El botón gira */
+    color: red; /* O cambia de color para notar el cambio */
+    transition: 0.3s ease;
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
 
