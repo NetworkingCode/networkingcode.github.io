@@ -28,16 +28,13 @@ header h1 {
     align-items: center;
 }
 
+
+
 .logo {
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-}
 
 .nav-links {
     display: flex;
@@ -57,4 +54,11 @@ header h1 {
 
 .logo img {
     height: 30px;
+}
+
+/* 2. MEDIA QUERIES (Siempre al final) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
 }
