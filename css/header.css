@@ -33,6 +33,12 @@ header h1 {
     font-size: 1.2rem;
 }
 
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}
+
 .nav-links {
     display: flex;
     gap: 20px;
@@ -47,4 +53,8 @@ header h1 {
 .nav-btn {
     padding: 10px 18px;
     font-size: 0.9rem;
+}
+
+.logo img {
+    height: 30px;
 }
