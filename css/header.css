@@ -13,7 +13,7 @@ header h1 {
 .hero {
     margin-top: 60px;
     text-align: center;
-    padding: 140px 20px 100px;
+    padding: 60px 20px 100px;
     background: linear-gradient(to bottom, #ffffff, #f7f7f7);
 }
 
@@ -129,7 +129,6 @@ header h1 {
         align-items: center;
         gap: 20px;
         padding: 20px 0;
-
         display: none;
         border-top: 1px solid #eee;
     }
@@ -140,5 +139,14 @@ header h1 {
 
     .menu-toggle {
         display: block;
+    }
+}
+
+/* Ajuste vital para móviles */
+@media (max-width: 768px) {
+    .hero {
+        /* En móviles, menos es más: 40px arriba y 30px abajo */
+        padding: 40px 15px 30px;
+        margin-top: 50px; /* Si el menú móvil es más pequeño */
     }
 }
