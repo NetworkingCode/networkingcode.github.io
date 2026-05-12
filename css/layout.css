@@ -119,17 +119,17 @@ h3 {
 
 
 #soluciones {
-    padding: 80px 20px;
+    padding: 10px 20px;
     background-color: #FFFF;
     text-align: center;
     /* background: #fff; */
 }
 
 #cierre {
-
+    padding: 10px 20px;
     background-color: #F7F7F7;
     text-align: center;
-    padding: 80px 20px;
+
 }
 
 
@@ -148,6 +148,7 @@ h3 {
 }
 
 #proceso {
+    padding: 10px 20px;
     background-color: #FFFF;
 }
 
@@ -166,7 +167,7 @@ h3 {
     padding: 80px 20px;
     background-color: #020617;
     color: white;
-    text-align: center;
+
 }
 
 #contacto .subtext {
@@ -174,26 +175,38 @@ h3 {
     color: #cbd5f5;
 }
 
+/* Centrar los bloques de email y WhatsApp */
 .contact-actions {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* Apila los elementos uno bajo otro */
     align-items: center;
+    /* Los centra horizontalmente */
+    gap: 30px;
+    /* Espacio entre el bloque de email y el botón de WA */
+    margin-top: 40px;
+    width: 100%;
 }
 
-.email-box {
+/* Centrar el contenido general de la sección */
+#contacto .container {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    /* Centra el H2 y el P */
 }
 
-.contact-actions {
-    margin-top: 20px;
-}
 
+/* Centrar lo que hay dentro de la caja de email */
 .email-box {
-    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
+
 
 .email-box span {
     display: block;
@@ -223,4 +236,3 @@ h3 {
         grid-template-columns: 1fr;
     }
 }
-

@@ -7,11 +7,12 @@
     text-decoration: none;
     font-weight: 600;
     transition: all 0.2s ease;
+    
 }
 
 
 .btn.primary {
-    background: #0A66C2;
+    background: #23b837;
     color: #fff;
 }
 
@@ -19,3 +20,30 @@
     background: #084C99;
 }
 
+.btn-whatsapp {
+
+    display: inline-block;
+    
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+
+    background-color: #25D366; /* Verde oficial de WhatsApp */
+    color: white;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E; /* Un verde más oscuro */
+    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+    color: white; /* Asegura que el texto siga blanco */
+}
+
+/* Efecto al hacer clic */
+.btn-whatsapp:active {
+    transform: translateY(0);
+}
