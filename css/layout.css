@@ -10,6 +10,16 @@ body {
     color: #111;
 }
 
+
+.section-intro {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: center;
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
 section {
     padding: 60px 0;
 }
