@@ -41,3 +41,32 @@ if (menuToggle && navLinks) {
         });
     });
 }
+
+// Elementos del panel de desarrollador
+const devMenu = document.getElementById('dev-menu');
+const btnToggleOutlines = document.getElementById('btn-toggle-outlines');
+
+// 1. Escuchar la combinación de teclas: Ctrl + Shift + D
+window.addEventListener('keydown', (event) => {
+    // Comprobamos si se presionó Ctrl, Shift y la tecla D (minúscula o mayúscula)
+    if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === 'd') {
+        event.preventDefault(); // Evita que el navegador ejecute otra acción por defecto
+        
+        // Alterna la visibilidad del menú
+        devMenu.classList.toggle('show');
+    }
+});
+
+// 2. Activar/Desactivar los bordes de debug al hacer clic en el botón
+btnToggleOutlines.addEventListener('click', () => {
+    document.body.classList.toggle('debug-active');
+    
+    // Opcional: Cambiar el estilo del botón para saber si está activo
+    if (document.body.classList.contains('debug-active')) {
+        btnToggleOutlines.style.borderColor = '#00ff66';
+        btnToggleOutlines.style.color = '#00ff66';
+    } else {
+        btnToggleOutlines.style.borderColor = '#555';
+        btnToggleOutlines.style.color = '#fff';
+    }
+});

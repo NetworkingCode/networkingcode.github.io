@@ -47,3 +47,62 @@
 .btn-whatsapp:active {
     transform: translateY(0);
 }
+
+/* ==========================================
+   PANEL DE DESARROLLADOR (TEMPORAL)
+   ========================================== */
+
+/* Contenedor del menú flotante */
+#dev-menu {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1e1e1e;
+    color: #00ff66; /* Verde tipo consola matrix */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-family: monospace;
+    z-index: 999999; /* Nos aseguramos de que esté por encima de TODO */
+    border: 1px solid #333;
+    display: none; /* Oculto por defecto */
+    width: 250px;
+}
+
+/* Clase que activará JavaScript para mostrarlo */
+#dev-menu.show {
+    display: block;
+}
+
+#dev-menu h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+#dev-menu hr {
+    border: 0;
+    border-top: 1px solid #333;
+    margin-bottom: 15px;
+}
+
+/* Botón estilo consola */
+.dev-btn {
+    width: 100%;
+    background-color: #333 !important;
+    color: #fff !important;
+    padding: 8px !important;
+    font-size: 12px !important;
+    border: 1px solid #555 !important;
+    cursor: pointer;
+}
+
+.dev-btn:hover {
+    background-color: #444 !important;
+    border-color: #00ff66 !important;
+}
+
+/* INTERRUPTOR DE RAYOS X (Tu código) */
+body.debug-active * {
+    outline: 1px solid rgba(255, 0, 0, 0.3) !important;
+}
