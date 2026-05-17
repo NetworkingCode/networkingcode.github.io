@@ -10,10 +10,24 @@ header h1 {
     margin-bottom: 20px;
 }
 
-.hero {
+/* .hero {
     margin-top: 10px;
     text-align: center;
     padding: 10px 20px 100px;
+    background: linear-gradient(to bottom, #285da3, #f7f7f7);
+}
+ */
+.hero {
+    min-height: 100vh;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    text-align: center;
+    
+    padding: 140px 20px 80px;
+
     background: linear-gradient(to bottom, #285da3, #f7f7f7);
 }
 
@@ -59,6 +73,27 @@ header h1 {
 
 .hero .actions {
     animation-delay: 0.3s;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+
+    font-size: 2rem;
+    text-decoration: none;
+    color: #777;
+
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
 }
 
 @keyframes fadeUp {
