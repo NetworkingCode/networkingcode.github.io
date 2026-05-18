@@ -19,14 +19,14 @@ header h1 {
  */
 .hero {
     min-height: 100vh;
-    
+    margin-top: 10px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
 
     text-align: center;
     
-    padding: 140px 20px 80px;
+    padding: 10px 20px 80px;
 
     background: linear-gradient(to bottom, #285da3, #f7f7f7);
 }
