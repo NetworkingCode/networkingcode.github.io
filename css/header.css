@@ -18,7 +18,7 @@ header h1 {
 }
  */
 .hero {
-    min-height: 100vh;
+    min-height: 90vh;
     margin-top: 10px;
     display: flex;
     align-items: flex-start;
@@ -26,9 +26,10 @@ header h1 {
 
     text-align: center;
     
-    padding: 10px 20px 80px;
+    padding: 10px 20px 1px;
 
     background: linear-gradient(to bottom, #285da3, #f7f7f7);
+    position: relative;
 }
 
 .hero-content {
@@ -78,13 +79,65 @@ header h1 {
 .scroll-down {
     position: absolute;
     bottom: 30px;
+    left: 50%;
 
-    font-size: 2rem;
+    transform: translateX(-50%);
+
+    width: 32px;
+    height: 50px;
+
+    border: 2px solid #999;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-top: 10px;
+
     text-decoration: none;
-    color: #777;
 
-    animation: bounce 1.5s infinite;
+    opacity: 0.8;
+
+    transition: all 0.2s ease;
 }
+
+.scroll-down span {
+    width: 6px;
+    height: 6px;
+
+    background: #666;
+    border-radius: 50%;
+
+    animation: scrollAnim 1.5s infinite;
+}
+
+.scroll-down:hover {
+    border-color: #0A66C2;
+}
+
+@keyframes scrollAnim {
+
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
 
 @keyframes bounce {
     0%, 100% {

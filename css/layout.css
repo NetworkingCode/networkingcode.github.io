@@ -103,7 +103,7 @@ h3 {
 .card {
     padding: 25px;
     border-radius: 12px;
-    background: #f9f9f9;
+    background: #ffffff;
     transition: all 0.2s ease;
 }
 
@@ -123,8 +123,7 @@ h3 {
 
 #problemas {
     padding: 10px 20px;
-    background-color: #f7f7f7;
-    /* background: #fafafa; */
+    background: #f7f7f7;
     text-align: center;
 }
 
@@ -133,63 +132,52 @@ h3 {
     font-size: 2rem;
 }
 
-
+/* como puedo ayudarte */
 #soluciones {
     padding: 60px 0px;
     /* background-color: #FFFF; */
-    background: linear-gradient(to bottom, #285da3, #f7f7f7);
+    background: #ffffff;
     text-align: center;
     /* background: #fff; */
 }
-
-#cierre {
-    padding: 10px 20px;
-    background-color: #F7F7F7;
-    text-align: center;
-
-}
-
 
 #soluciones h2 {
     margin-bottom: 40px;
     font-size: 2rem;
 }
 
-#soluciones .card {
-    background: #0f172a;
-    color: white;
+/* #soluciones .card {
+    background: #f9f9f9;
+    color: rgb(10, 8, 8);
 }
 
 #soluciones .card p {
-    color: #cbd5f5;
+    color: #1e45c5;
+} */
+
+/* Menos problemas, más control */
+#cierre {
+    padding: 10px 20px;
+    background: #f7f7f7;
+    text-align: center;
+
 }
 
+/* Como funciona */
 #proceso {
     padding: 10px 20px;
-    background-color: #FFFF;
-}
-
-#apps {
-    padding: 80px 20px;
-    background-color: #f8fafc;
-    text-align: center;
-}
-
-#apps .subtext {
-    margin-bottom: 40px;
-    color: #475569;
+    background: #f7f7f7;
 }
 
 #contacto {
     padding: 80px 20px;
-    background-color: #020617;
-    color: white;
+    background: #f7f7f7;
+    text-align: center;
 
 }
 
 #contacto .subtext {
     margin-bottom: 30px;
-    color: #cbd5f5;
 }
 
 /* Centrar los bloques de email y WhatsApp */
