@@ -23,11 +23,8 @@ header h1 {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-
-    text-align: center;
-    
+    text-align: center;    
     padding: 10px 20px 1px;
-
     background: linear-gradient(to bottom, #285da3, #f7f7f7);
     position: relative;
 }
