@@ -1,0 +1,6 @@
+# Permitir acceso a todos los bots
+User-agent: *
+Allow: /
+
+# Sitemap del sitio
+Sitemap: https://nbits.cl/sitemap.xml
