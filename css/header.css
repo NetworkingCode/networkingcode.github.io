@@ -18,7 +18,7 @@ header h1 {
 }
  */
 .hero {
-    min-height: 90vh;
+    min-height: 80vh;
     margin-top: 10px;
     display: flex;
     align-items: flex-start;
