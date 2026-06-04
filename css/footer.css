@@ -10,3 +10,14 @@ footer p {
     opacity: 0.85;
     font-size: 0.9rem;
 }
+
+.footer-social a {
+    font-size: 28px;
+    color: #555;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #285da3;
+}
