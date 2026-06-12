@@ -29,8 +29,88 @@ header h1 {
     justify-content: center;
     text-align: center;
     padding: 80px 20px 1px;
-    background: linear-gradient(to bottom, #285da3, #f7f7f7);
+    background:
+        linear-gradient(135deg,
+            #f7f9fc 0%,
+            #eef3f9 100%);
     position: relative;
+}
+
+
+.hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    background: #285da3;
+
+    filter: blur(150px);
+
+    opacity: .15;
+
+    z-index: -1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 16px;
+
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, .12);
+
+    transition: .3s;
+}
+
+.hero-services {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    
+}
+
+.hero-services div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.hero-services i {
+    font-size: 1.8rem;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: .5rem 1rem;
+    border: 1px solid #285da3;
+    border-radius: 999px;
+    font-size: .85rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+
+    .hero-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        order: -1;
+        position: relative;
+    }
+
 }
 
 /* Contenedor interno del Hero.
@@ -164,7 +244,8 @@ header h1 {
    sobre elementos interactivos. */
 @keyframes bounce {
 
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0);
     }
 
