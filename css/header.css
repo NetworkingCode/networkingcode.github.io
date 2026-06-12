@@ -1,57 +1,76 @@
+/* Encabezado principal de la página.
+   Centra el contenido y agrega espacios internos
+   y externos para separarlo del resto del sitio. */
 header {
     text-align: center;
     padding: 60px 20px 80px;
     margin-top: 60px;
 }
 
+/* Título principal dentro del encabezado.
+   Define un tamaño destacado y mejora la legibilidad
+   mediante el espaciado vertical. */
 header h1 {
     font-size: 2.5rem;
     line-height: 1.3;
     margin-bottom: 20px;
 }
 
-/* .hero {
-    margin-top: 10px;
-    text-align: center;
-    padding: 10px 20px 100px;
-    background: linear-gradient(to bottom, #285da3, #f7f7f7);
-}
- */
+/* Sección principal Hero del sitio.
+   Ocupa gran parte de la pantalla, centra el contenido
+   y aplica el fondo degradado que representa la identidad
+   visual de la cabecera. También sirve como contenedor
+   para elementos posicionados de forma absoluta. */
 .hero {
     min-height: 80vh;
     margin-top: 10px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    text-align: center;    
-    padding: 10px 20px 1px;
+    text-align: center;
+    padding: 80px 20px 1px;
     background: linear-gradient(to bottom, #285da3, #f7f7f7);
     position: relative;
 }
 
+/* Contenedor interno del Hero.
+   Limita el ancho máximo del contenido para mantener
+   una lectura cómoda en pantallas grandes. */
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
 }
 
+/* Título principal de la sección Hero.
+   Se muestra con un tamaño destacado para captar
+   la atención del visitante. */
 .hero h1 {
     font-size: 2.8rem;
     line-height: 1.2;
     margin-bottom: 20px;
 }
 
+/* Texto descriptivo principal del Hero.
+   Entrega información complementaria al título
+   con una apariencia visual más suave. */
 .hero .subtext {
     font-size: 1.2rem;
     color: #444;
     margin-bottom: 15px;
 }
 
+/* Texto de confianza o credibilidad.
+   Utilizado para mostrar mensajes de respaldo,
+   experiencia o garantías al usuario. */
 .hero .trust {
     font-size: 0.95rem;
     color: #777;
     margin-bottom: 30px;
 }
 
+/* Estado inicial de los elementos animados.
+   Los mantiene ocultos y ligeramente desplazados
+   hasta que se ejecuta la animación de entrada. */
 .hero h1,
 .hero .subtext,
 .hero .trust,
@@ -61,58 +80,64 @@ header h1 {
     animation: fadeUp 0.6s ease forwards;
 }
 
+/* Retrasa ligeramente la aparición del subtítulo
+   para crear una secuencia visual más atractiva. */
 .hero .subtext {
     animation-delay: 0.1s;
 }
 
+/* Retrasa la aparición del texto de confianza,
+   reforzando el efecto escalonado de entrada. */
 .hero .trust {
     animation-delay: 0.2s;
 }
 
+/* Retrasa la aparición de los botones o acciones
+   principales para completar la secuencia animada. */
 .hero .actions {
     animation-delay: 0.3s;
 }
 
+/* Indicador visual para invitar al usuario
+   a desplazarse hacia el contenido inferior.
+   Se posiciona al fondo de la sección Hero. */
 .scroll-down {
     position: absolute;
     bottom: 30px;
     left: 50%;
-
     transform: translateX(-50%);
-
     width: 32px;
     height: 50px;
-
     border: 2px solid #999;
     border-radius: 20px;
-
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
     padding-top: 10px;
-
     text-decoration: none;
-
     opacity: 0.8;
-
     transition: all 0.2s ease;
 }
 
+/* Punto animado dentro del indicador de scroll.
+   Simula el movimiento de desplazamiento hacia abajo. */
 .scroll-down span {
     width: 6px;
     height: 6px;
-
     background: #666;
     border-radius: 50%;
-
     animation: scrollAnim 1.5s infinite;
 }
 
+/* Efecto visual al pasar el cursor sobre
+   el indicador de desplazamiento. */
 .scroll-down:hover {
     border-color: #0A66C2;
 }
 
+/* Animación del punto indicador de scroll.
+   Produce la sensación de movimiento descendente
+   para sugerir que existe más contenido debajo. */
 @keyframes scrollAnim {
 
     0% {
@@ -134,9 +159,11 @@ header h1 {
     }
 }
 
-
-
+/* Animación de rebote vertical.
+   Puede utilizarse para llamar la atención
+   sobre elementos interactivos. */
 @keyframes bounce {
+
     0%, 100% {
         transform: translateY(0);
     }
@@ -146,13 +173,20 @@ header h1 {
     }
 }
 
+/* Animación de aparición progresiva.
+   Hace visible un elemento mientras lo desplaza
+   suavemente desde una posición inferior. */
 @keyframes fadeUp {
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
+/* Logotipo textual del sitio.
+   Define una apariencia destacada y mejora
+   la percepción de marca dentro del menú. */
 .logo {
     font-size: 1.7rem;
     font-weight: 800;
@@ -163,15 +197,22 @@ header h1 {
     transition: all 0.2s ease;
 }
 
+/* Parte destacada del logotipo.
+   Permite resaltar una sección específica
+   mediante un color diferente. */
 .logo span {
     color: #0A66C2;
 }
 
+/* Efecto visual al pasar el cursor sobre
+   el logotipo para reforzar la interacción. */
 .logo:hover {
     transform: scale(1.03);
 }
 
-/* NAVBAR BASE */
+/* Barra de navegación principal.
+   Permanece visible al hacer scroll y se mantiene
+   por encima del resto de elementos de la página. */
 .navbar {
     position: sticky;
     top: 0;
@@ -180,28 +221,37 @@ header h1 {
     z-index: 1000;
 }
 
+/* Contenedor interno de la barra de navegación.
+   Organiza y distribuye los elementos del menú
+   manteniendo un ancho máximo controlado. */
 .nav-container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 15px 20px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* LINKS */
+/* Grupo de enlaces de navegación.
+   Organiza los enlaces horizontalmente y define
+   la separación entre cada uno de ellos. */
 .nav-links {
     display: flex;
     gap: 20px;
 }
 
+/* Estilo base de los enlaces del menú.
+   Mantiene una apariencia limpia y consistente. */
 .nav-links a {
     text-decoration: none;
     color: #111;
     font-weight: 500;
 }
 
+/* Enlace telefónico destacado.
+   Se utiliza para resaltar el contacto directo
+   dentro de la navegación principal. */
 .nav-phone {
     text-decoration: none;
     color: #0A66C2;
@@ -209,27 +259,31 @@ header h1 {
     transition: all 0.2s ease;
 }
 
+/* Efecto visual al interactuar con
+   el enlace telefónico. */
 .nav-phone:hover {
     opacity: 0.8;
 }
 
-/* BOTÓN HAMBURGUESA */
+/* Botón hamburguesa para dispositivos móviles.
+   Permite mostrar u ocultar el menú responsive. */
 .menu-toggle {
     display: none;
     font-size: 1.8rem;
     cursor: pointer;
 }
 
-/* Animación de las rayitas del botón */
+/* Estado activo del botón hamburguesa.
+   Indica visualmente que el menú se encuentra abierto. */
 .menu-toggle.active {
     transform: rotate(90deg);
-    /* El botón gira */
     color: red;
-    /* O cambia de color para notar el cambio */
     transition: 0.3s ease;
 }
 
-/* MOBILE */
+/* Adaptación del menú para pantallas pequeñas.
+   Convierte la navegación horizontal en un menú
+   desplegable optimizado para móviles. */
 @media (max-width: 768px) {
 
     .nav-links {
@@ -246,25 +300,31 @@ header h1 {
         border-top: 1px solid #eee;
     }
 
+    /* Muestra el menú móvil cuando se activa
+       mediante JavaScript. */
     .nav-links.active {
         display: flex;
     }
 
+    /* Hace visible el botón hamburguesa
+       únicamente en dispositivos móviles. */
     .menu-toggle {
         display: block;
     }
 }
 
-/* Ajuste vital para móviles */
+/* Ajustes específicos del Hero para móviles.
+   Reduce espacios y mejora el aprovechamiento
+   de la pantalla en dispositivos pequeños. */
 @media (max-width: 768px) {
     .hero {
-        /* En móviles, menos es más: 40px arriba y 30px abajo */
         padding: 10px 15px 30px;
         margin-top: 50px;
-        /* Si el menú móvil es más pequeño */
     }
 }
 
+/* Oculta el número telefónico en móviles
+   para simplificar la navegación y ahorrar espacio. */
 @media (max-width: 768px) {
     .nav-phone {
         display: none;
